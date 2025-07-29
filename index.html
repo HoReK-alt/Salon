@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salón de Eventos Elegante</title>
+  <style>
+    :root {
+      --color-primario: #6a1b9a;
+      --color-secundario: #f3e5f5;
+      --color-oscuro: #2e2e2e;
+      --color-claro: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--color-oscuro);
+      background-color: var(--color-claro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--color-primario);
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .opiniones {
+      background: var(--color-secundario);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--color-primario);
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--color-oscuro);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      z-index: 1001;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Tu Evento, Nuestro Espacio Perfecto</h1>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos un salón de eventos con más de 10 años de experiencia organizando momentos inolvidables. Brindamos un ambiente elegante y atención personalizada para todo tipo de celebraciones.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>🎉 Fiestas de 15 y bodas</li>
+      <li>👶 Bautismos y comuniones</li>
+      <li>🏢 Eventos corporativos</li>
+      <li>🎂 Cumpleaños infantiles y adultos</li>
+    </ul>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galería</h2>
+    <img src="https://images.unsplash.com/photo-1603092438533-3e0e74c6c36c" alt="Evento 1">
+    <img src="https://images.unsplash.com/photo-1561451214-6187f72182e5" alt="Evento 2">
+  </section>
+
+  <section id="opiniones" class="opiniones">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <p>"¡Una noche mágica! Todo estuvo perfecto, desde la decoración hasta la atención. ¡Gracias!" - Carla M.</p>
+    <p>"El mejor lugar para mi boda. Súper recomendable." - Tomás y Laura</p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje..." rows="4" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 gmarketinglobal. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/5491123456789" class="whatsapp" target="_blank">💬 WhatsApp</a>
+
+</body>
+</html>
